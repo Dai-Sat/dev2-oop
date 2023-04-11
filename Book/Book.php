@@ -7,6 +7,8 @@ class Book
   // 2.private = can be accessed ONLY within the class
   // 3.protected = can be accessed within the class and inside of the sub_class(child_class)→inheritance
 
+  // I just added comment here.....
+
   // $this-> use this to access properties and methods if currently inside of the class
 
   // properties
