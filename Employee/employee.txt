@@ -1,0 +1,107 @@
+Send the following guide to your students.
+
+    PROPERTIES (private):
+        name
+        position
+        civil_status
+        emp_status
+        hrs_worked
+        (You may also create additional properties)
+    
+    METHODS:
+        1 day = 8hrs
+        1 week = 40hrs only
+        45hrs (40hrs regular, 5hrs overtime)
+        gross income = regular pay + overtime pay
+        NET INCOME = gross income - Deductions
+        
+        Regular Pay
+            position
+                Staff
+                    Casual: 300/day (calculate the hourly rate, then multiply to the number of hours worked)
+                    Probationary: 350/day
+                    Regular: 400/day
+                Admin
+                    Casual: 350/day
+                    Probationary: 400/day
+                    Regular: 500/day
+        
+        Overtime Pay
+            position
+                Staff
+                    Casual: 10/hr
+                    Probationary: 25/hr
+                    Regular: 30/hr
+                Admin
+                    Casual: 15/hr
+                    Probationary: 30/hr
+                    Regular: 40/hr
+        
+        Deductions
+            Healthcare:
+                Single = 200
+                Married = 75
+            
+            Tax:
+                Single
+                    gross income <= 1000
+                        tax = 0
+                    gross income > 1000
+                        tax = 5% of gross income
+                Married 
+                    gross income <= 1500
+                        tax = 0
+                    gross income > 1500
+                        tax = 3% of gross income
+
+—
+
+To check the student’s output:
+
+A.
+[INPUT] Staff, Single, Casual, 40hrs
+Regular: 1500
+OT: 0
+Healthcare: 200
+Tax: 75
+NET: 1225
+
+B.
+Admin, Single, Casual, 40hrs
+REGULAR: 1750
+HC: 200
+TAX: 87.50
+NET: 1463
+
+C.
+Admin, Married, Casual, 40hrs
+REGULAR: 1750
+HC: 75
+TAX: 52.50
+NET: 1623
+
+D.
+Staff, Single, Regular, 45hrs
+REGULAR: 2000
+OT: 150
+HC: 200
+TAX: 107.50
+NET: 1843
+
+E.
+Admin, Single, Probationary, 24 hrs
+REGULAR: 1200
+HC: 200
+TAX: 60
+NET: 940
+
+F.
+Admin, Single, Probationary, 50 hrs
+REGULAR: 2000
+OT: 300
+HC: 200
+TAX: 115
+NET: 1985
+
+
+
